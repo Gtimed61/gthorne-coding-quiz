@@ -1,60 +1,52 @@
+var quizContainer = document.getElementById("quiz")
+var startGame = document.getElementById("start-quiz")
+var resultsContainer = document.getElementById("player-score")
+var highScore = document.getElementById("high-score")
+var endGame = 
 
-var quizContainer = document
-var resultsContainer = document
-var highScore
-var startGame
-var endGame
 var questions = [
     {
-        question: "what",
+        question: "what code is the main structure of a webpage?",
         answerChoices:[
-            "a.",
-            "b.",
-            "c.",
-            "d.",
-        correctAnswer: "", 
-        ]     
-    };    
+            "a. CSS",
+            "b. JavaScript",
+            "c. HTML",
+            "d. Word",
+        ],
+        correctAnswer: "c. HTML", 
+             
+    },
     
     {
-        question: "what";
+        question: "which code provides the style for your website?",
         answerChoices:[
-            "a.",
-            "b.",
-            "c.",
-            "d.",
-        correctAnswer: "",
-        ]           
-    }
+            "a. HTML",
+            "b. CSS",
+            "c. JavaScript",
+            "d. Google Forms",
+        ],
+        correctAnswer: "b. CSS",
+                   
+    },
         
     {
-        question: "what";
+        question: "how can we add functionality to our webpages?",
         answerChoices: [
-            "a.",
-            "b.",
-            "c.",
-            "d." ,
-        correctAnswer: "",
-        ]    
-    }        
-
-    {
-        question: "what";
-        answerChoices: [
-            "a.",
-            "b.",
-            "c.",
-            "d." ,
-        correctAnswer: "",
-        ]
-    }
-
+            "a. with HTML",
+            "b. with CSS",
+            "c. with excel spreadsheets",
+            "d. with JavScript" ,
+        ],
+        correctAnswer: "d. with JavaScript",
+            
+    },        
 ]
-// functions to start game
+
 // timer for start and stop
-var startGame = function() {
-
-
+var startGame = function(event) {
+    document.querySelector("start-quiz");
+    var quizContainer = document.querySelector("quiz");
+    var questions = document.querySelector("questions");
 }
 
 // end game function with scoring and player input
@@ -72,14 +64,9 @@ var endGame = function() {
     }
 }
 
-
-// elements for the buttons to click
-
-}
+addEventListener// elements for the buttons to click
 // function to end game after time runs out or the there are no more questions
 // local storage for the save initials and high score
-
 // incorrect answer subtracts from time
 // array for storing questions and answer choices
-
 // add event listner for click to start game and timer
