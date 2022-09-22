@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+</head>
+    <!--jumbotron element for top of quiz-->
+<body>
+    
+    <div class="jumbotron jumbotron-fluid">
+        <header class="display-4 text-center">Coding Quiz</header>
+        <p class="text-center">Try to answer the following questions about coding. Do your best and keep your eye on the timer!</p>
+        <!--button to start quiz, linked to javaScript for function-->
+        <button id="start-btn" type="button" class="start-btn btn-dark" >Start Quiz</button>
+        <div id= "timer"></div>
+    </div>
+
+    <div class="quiz-container">
+        <div id="questions">
+            <button class="answer" id="choice-a"></button>
+            <button class="answer" id="choice-b"></button>
+            <button class="answer" id="choice-c"></button>
+            <button class="answer" id="choice-d"></button>
+        </div>
+    </div>
+
+    <div class="results" id="score"> 
+        <p class="score" id="score-results">display score</p>
+    </div>
+
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+</html>
