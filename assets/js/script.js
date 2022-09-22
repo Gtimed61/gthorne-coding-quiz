@@ -81,7 +81,6 @@ function cycleQuestions(index) {
     choiceB.textContent = questions[index].answerChoices[1]
     choiceC.textContent = questions[index].answerChoices[2]
     choiceD.textContent = questions[index].answerChoices[3]
-
 }
 // end game function with scoring and player input
 function endGame() {
